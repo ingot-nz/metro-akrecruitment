@@ -1,0 +1,244 @@
+<style>
+/* Restore default list, strong, and line break styles for jobadder widget and related content */
+#ja-jobs-widget ul,
+#ja-jobs-widget ol {
+	list-style: initial;
+	padding-left: 0;
+}
+
+#ja-jobs-widget * {
+  color: #0a1d3d;
+  font-weight: 300;
+}
+
+#ja-jobs-widget li {
+	list-style: initial;
+	margin-bottom: 0.5em;
+}
+
+#ja-jobs-widget strong {
+	font-weight: bold;
+}
+
+#ja-jobs-widget br {
+	display: inline;
+}
+
+/* Styling inspired by css.css and public.bundle.css for styling-template.html */
+
+#ja-jobs-widget {
+	position: relative;
+	background: #fff;
+  font-family: var(--p-font-family-tag), Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+	color: rgb(10, 29, 61);
+}
+
+.stack-inner {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 1.25rem;
+}
+
+.ja-job-list {
+	margin-bottom: 3em;
+}
+
+.ja-job-list .job {
+	margin-bottom: 1.5rem;
+	padding: 1rem 1.5rem;
+	border-radius: 0.25rem;
+}
+
+.ja-job-details .title,
+.ja-job-list .job .title {
+	font-family: yszk, Arial, Helvetica, sans-serif;
+	font-size: 1.938rem;
+	font-weight: 300;
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+}
+
+.ja-job-list .job .title {
+  width: 51%;
+  float: left;
+}
+
+.ja-job-list .job .title a {
+	text-decoration: none;
+	transition: color 0.2s;
+  width: 90%;
+  display: block;
+  white-space: wrap;
+}
+
+.ja-job-list .job .meta {
+    font-size: 1rem;
+    margin-bottom: 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 51%;
+    float: left;
+}
+
+.ja-job-list .job .meta .classifications {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+  order: 1;
+}
+
+.ja-job-list .job .meta .salary {
+  order: 2;
+  font-family: bhyf;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+.ja-job-list .job .meta .date-posted {
+  order: 3;
+  margin-top: 1.5em;
+}
+
+.ja-job-list .classifications li:first-child::after {
+  content: "- ";
+}
+
+.ja-job-list .classifications li:last-child {
+  padding-left: 5px;
+}
+
+#ja-jobs-widget .ja-job-list .job .meta .classifications {
+  margin: 0;
+  padding: 0;
+}
+
+#ja-jobs-widget .ja-job-list .job .meta .classifications li {
+	list-style: none;
+	color: #1d2428;
+	font-size: 1rem;
+  font-family: bhyf;
+  font-weight: 700;
+}
+
+#ja-jobs-widget .ja-job-details .meta .classifications li {
+  list-style: none;
+}
+
+#ja-jobs-widget .description {
+  margin-top: 1.5em;
+}
+
+#ja-jobs-widget .ja-job-details .meta .bullet-points li,
+#ja-jobs-widget .ja-job-details .description ul li {
+  margin-left: 2.5em;
+}
+
+.ja-job-list .job .meta .date-posted {
+	font-size: 0.95em;
+	font-weight: 400;
+}
+
+.ja-job-list .job .meta .date-posted::before {
+	content: "Date Listed: ";
+  font-weight: bold;
+}
+
+.ja-job-list .job .summary {
+	font-size: 1.125rem;
+  font-family: bhyf;
+	color: #222;
+  font-weight: 300;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+
+.ja-job-list .job .view-details,
+#ja-jobs-widget .ja-submit input,
+#ja-jobs-widget .apply .ja-button,
+#ja-jobs-widget .apply .back-link {
+	display: inline-block;
+	font-family: mghk, Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #061733;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #061733;
+	padding: 0.7em 0.95em;
+	text-decoration: none;
+	letter-spacing: 0.11em;
+	transition: all 0.2s, color 0.2s;
+	box-shadow: inset 0 0 0 0.0625rem #061733;
+}
+
+.ja-job-list .job .view-details,
+#ja-jobs-widget .ja-submit input {
+  margin-left: 51%;
+}
+
+#ja-jobs-widget .apply .ja-button,
+#ja-jobs-widget .apply .back-link {
+  margin-top: 1.5em;
+}
+
+.ja-job-list .job .view-details:hover,
+#ja-jobs-widget .ja-submit input:hover,
+#ja-jobs-widget .apply .ja-button:hover,
+#ja-jobs-widget .apply .back-link:hover {
+	background: #061733;
+	color: #fff !important;
+	box-shadow: inset 0 0 0 0.0625rem #061733;
+}
+
+#ja-jobs-widget .ja-job-details .description ul,
+#ja-jobs-widget .ja-job-details .bullet-points {
+  margin-top: .5em;
+}
+
+#ja-jobs-widget .ja-job-details .bullet-points li {
+  margin-left: 2.5em;
+}
+
+.powered-by-jobadder {
+	color: #bbb;
+	font-size: 0.9em;
+	text-align: center;
+	margin: 2em 0 1em 0;
+}
+
+.powered-by-jobadder a {
+	color: #bbb;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+#ja-jobs-widget .ja-field-container {
+    width: 100%;
+}
+
+#ja-jobs-widget .ja-field select, .ja-field input {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#ja-jobs-widget .ja-job-search {
+  margin-bottom: 30px;
+}
+
+#ja-jobs-widget .ja-job-search .ja-button {
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 768px) {
+    #ja-jobs-widget .ja-field {
+        width: 400px;
+    }
+}
+</style>
