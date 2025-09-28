@@ -1,4 +1,3 @@
-<style>
 /* Restore default list, strong, and line break styles for jobadder widget and related content */
 #ja-jobs-widget ul,
 #ja-jobs-widget ol {
@@ -241,4 +240,3 @@
         width: 400px;
     }
 }
-</style>
